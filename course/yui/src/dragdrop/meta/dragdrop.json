@@ -1,0 +1,16 @@
+{
+    "eset-course-dragdrop": {
+        "requires": [
+            "base",
+            "node",
+            "io",
+            "dom",
+            "dd",
+            "dd-scroll",
+            "eset-core-dragdrop",
+            "eset-core-notification",
+            "eset-course-coursebase",
+            "eset-course-util"
+        ]
+    }
+}

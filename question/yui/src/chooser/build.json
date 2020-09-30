@@ -1,0 +1,10 @@
+{
+    "name": "eset-question-chooser",
+    "builds": {
+        "eset-question-chooser": {
+            "jsfiles": [
+                "chooser.js"
+            ]
+        }
+    }
+}

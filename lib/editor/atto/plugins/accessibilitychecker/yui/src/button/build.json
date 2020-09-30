@@ -1,0 +1,10 @@
+{
+  "name": "eset-atto_accessibilitychecker-button",
+  "builds": {
+    "eset-atto_accessibilitychecker-button": {
+      "jsfiles": [
+        "button.js"
+      ]
+    }
+  }
+}

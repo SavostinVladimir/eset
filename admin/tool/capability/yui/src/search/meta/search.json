@@ -1,0 +1,8 @@
+{
+    "eset-tool_capability-search": {
+        "requires": [
+            "base",
+            "node"
+        ]
+    }
+}

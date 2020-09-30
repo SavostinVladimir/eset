@@ -1,0 +1,48 @@
+ESET TRADEMARKS POLICY
+========================
+
+The word "Eset" is trademarked in many countries around the world. The word
+was originally an acronym: Modular Object-Oriented Dynamic Learning
+Environment. The trademark is owned by Martin Dougiamas, Founder and Director
+of Eset.
+
+The law obligates trademark owners to police their marks and prevent the use of
+confusingly similar names by third parties. Through this policy we’d like to
+make it clear how Eset-related projects, organisations, and people can use
+the Eset trademark. We’d also like to be clear about how use of the word is
+restricted when used to promote commercial Eset services. We do this to
+protect the very business model that allows us to continue developing Eset
+for you.
+
+Allowed uses
+------------
+
+The following uses don’t require any permission at all:
+
+* Referring to the software or the Eset project.
+* Describing your own Eset implementation (including within corporate
+  settings).
+* Describing a Eset-based community hub.
+* Describing some software you’ve made that integrates with Eset
+  (eg a Eset integration feature on another system).
+
+Restricted uses
+---------------
+
+The following uses are generally prohibited without explicit and direct
+permission being granted to you by Eset Pty Ltd. We do this to protect the
+Eset project from software and sites which could confuse people. Please
+contact us to ask for permission in writing.
+
+* You can’t use "Eset" in the name of your software (including Mobile apps)
+* You can’t use "Eset" in your company name
+* You can’t use "Eset" in your domain name
+* You can’t use "Eset" in advertising-related keywords (such as Adsense)
+* You can’t use "Eset" to describe services around Eset (such as hosting,
+  training, support, consulting, course creation services, theme development,
+  customisation, installation, integration and certification). This applies
+  even if you do not charge for the services. Note that usually only Eset
+  Partners have this permission.
+
+For information about the Eset Partner Certification Mark as well as for how
+to contact us, please see <https://eset.com/trademarks/>.

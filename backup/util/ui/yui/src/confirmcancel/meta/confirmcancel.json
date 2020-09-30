@@ -1,0 +1,9 @@
+{
+    "eset-backup-confirmcancel": {
+        "requires": [
+            "node",
+            "node-event-simulate",
+            "eset-core-notification-confirm"
+        ]
+    }
+}

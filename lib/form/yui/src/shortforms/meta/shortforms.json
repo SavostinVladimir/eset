@@ -1,0 +1,10 @@
+{
+    "eset-form-shortforms": {
+        "requires": [
+            "node",
+            "base",
+            "selector-css3",
+            "eset-core-event"
+        ]
+    }
+}

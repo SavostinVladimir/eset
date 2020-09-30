@@ -1,0 +1,10 @@
+{
+  "name": "eset-message_airnotifier-toolboxes",
+  "builds": {
+    "eset-message_airnotifier-toolboxes": {
+      "jsfiles": [
+        "toolboxes.js"
+      ]
+    }
+  }
+}

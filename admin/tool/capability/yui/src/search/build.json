@@ -1,0 +1,10 @@
+{
+    "name": "eset-tool_capability-search",
+    "builds": {
+        "eset-tool_capability-search": {
+            "jsfiles": [
+                "search.js"
+            ]
+        }
+    }
+}

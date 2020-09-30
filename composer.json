@@ -1,0 +1,20 @@
+{
+    "name": "eset/eset",
+    "license": "GPL-3.0-or-later",
+    "description": "Eset - the world's open source learning platform",
+    "type": "project",
+    "homepage": "https://eset.org",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/esethq/php-webdriver.git"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "7.5.*",
+        "phpunit/dbunit": "4.0.*",
+        "esethq/behat-extension": "3.39.3",
+        "mikey179/vfsstream": "^1.6",
+        "instaclick/php-webdriver": "dev-local as 1.x-dev"
+    }
+}

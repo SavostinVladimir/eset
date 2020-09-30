@@ -1,0 +1,1 @@
+YUI.add("eset-course-util-base",function(e,o){e.namespace("Eset.core_course.util")},"@VERSION@");

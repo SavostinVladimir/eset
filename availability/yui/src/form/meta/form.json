@@ -1,0 +1,13 @@
+{
+  "eset-core_availability-form": {
+    "requires": [
+        "base",
+        "node",
+        "event",
+        "event-delegate",
+        "panel",
+        "eset-core-notification-dialogue",
+        "json"
+    ]
+  }
+}

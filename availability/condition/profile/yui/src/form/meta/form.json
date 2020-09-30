@@ -1,0 +1,10 @@
+{
+  "eset-availability_profile-form": {
+    "requires": [
+        "base",
+        "node",
+        "event",
+        "eset-core_availability-form"
+    ]
+  }
+}

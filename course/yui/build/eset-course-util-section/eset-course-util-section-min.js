@@ -1,0 +1,1 @@
+YUI.add("eset-course-util-section",function(e,o){e.namespace("Eset.core_course.util.section"),e.Eset.core_course.util.section={CONSTANTS:{SECTIONIDPREFIX:"section-"},getId:function(e){var o=e.get("id").replace(this.CONSTANTS.SECTIONIDPREFIX,"");return!("number"!=typeof(o=parseInt(o,10))||!isFinite(o))&&o}}},"@VERSION@",{requires:["node","eset-course-util-base"]});

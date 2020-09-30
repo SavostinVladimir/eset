@@ -1,0 +1,33 @@
+{
+    "name": "eset-editor_atto-editor",
+    "builds": {
+        "eset-editor_atto-editor": {
+            "jsfiles": [
+                "editor.js",
+                "notify.js",
+                "textarea.js",
+                "autosave.js",
+                "autosave-io.js",
+                "clean.js",
+                "commands.js",
+                "toolbar.js",
+                "toolbar-keyboardnav.js",
+                "selection.js",
+                "styling.js",
+                "filepicker.js"
+            ]
+        },
+        "eset-editor_atto-plugin": {
+            "jsfiles": [
+                "editor-plugin.js",
+                "editor-plugin-buttons.js",
+                "editor-plugin-dialogue.js"
+            ]
+        },
+        "eset-editor_atto-menu": {
+            "jsfiles": [
+                "menu.js"
+            ]
+        }
+    }
+}

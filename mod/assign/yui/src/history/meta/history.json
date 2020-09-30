@@ -1,0 +1,8 @@
+{
+    "eset-mod_assign-history": {
+        "requires": [
+            "node",
+            "transition"
+        ]
+    }
+}

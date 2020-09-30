@@ -1,0 +1,43 @@
+{
+  "eset-core-notification": {
+    "requires": [
+        "eset-core-notification-dialogue",
+        "eset-core-notification-alert",
+        "eset-core-notification-confirm",
+        "eset-core-notification-exception",
+        "eset-core-notification-ajaxexception"
+    ]
+  },
+  "eset-core-notification-dialogue": {
+    "requires": [
+        "base",
+        "node",
+        "panel",
+        "escape",
+        "event-key",
+        "dd-plugin",
+        "eset-core-widget-focusafterclose",
+        "eset-core-lockscroll"
+    ]
+  },
+  "eset-core-notification-alert": {
+    "requires": [
+        "eset-core-notification-dialogue"
+    ]
+  },
+  "eset-core-notification-confirm": {
+    "requires": [
+        "eset-core-notification-dialogue"
+    ]
+  },
+  "eset-core-notification-exception": {
+    "requires": [
+        "eset-core-notification-dialogue"
+    ]
+  },
+  "eset-core-notification-ajaxexception": {
+    "requires": [
+        "eset-core-notification-dialogue"
+    ]
+  }
+}

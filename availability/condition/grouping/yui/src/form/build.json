@@ -1,0 +1,10 @@
+{
+  "name": "eset-availability_grouping-form",
+  "builds": {
+    "eset-availability_grouping-form": {
+      "jsfiles": [
+        "form.js"
+      ]
+    }
+  }
+}

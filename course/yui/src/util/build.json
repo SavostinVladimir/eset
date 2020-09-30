@@ -1,0 +1,20 @@
+{
+  "name": "eset-course-util",
+  "builds": {
+    "eset-course-util-base": {
+      "jsfiles": [
+        "base.js"
+      ]
+    },
+    "eset-course-util-section": {
+      "jsfiles": [
+        "section.js"
+      ]
+    },
+    "eset-course-util-cm": {
+      "jsfiles": [
+        "cm.js"
+      ]
+    }
+  }
+}

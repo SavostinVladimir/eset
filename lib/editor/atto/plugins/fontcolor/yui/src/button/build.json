@@ -1,0 +1,10 @@
+{
+    "name": "eset-atto_fontcolor-button",
+    "builds": {
+        "eset-atto_fontcolor-button": {
+            "jsfiles": [
+                "button.js"
+            ]
+        }
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "eset-core-event": {
+        "requires": [
+            "event-custom"
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "name": "eset-core-dragdrop",
+    "builds": {
+        "eset-core-dragdrop": {
+            "jsfiles": [
+                "dragdrop.js"
+            ]
+        }
+    }
+}

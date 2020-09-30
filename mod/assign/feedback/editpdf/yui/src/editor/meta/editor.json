@@ -1,0 +1,21 @@
+{
+  "eset-assignfeedback_editpdf-editor": {
+    "requires": [
+        "base",
+        "event",
+        "node",
+        "io",
+        "graphics",
+        "json",
+        "event-move",
+        "event-resize",
+        "transition",
+        "querystring-stringify-simple",
+        "eset-core-notification-dialog",
+        "eset-core-notification-alert",
+        "eset-core-notification-warning",
+        "eset-core-notification-exception",
+        "eset-core-notification-ajaxexception"
+    ]
+  }
+}

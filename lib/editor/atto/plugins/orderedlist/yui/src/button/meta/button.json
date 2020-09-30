@@ -1,0 +1,7 @@
+{
+    "eset-atto_orderedlist-button": {
+        "requires": [
+            "eset-editor_atto-plugin"
+        ]
+    }
+}

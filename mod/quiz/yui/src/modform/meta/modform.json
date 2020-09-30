@@ -1,0 +1,9 @@
+{
+    "eset-mod_quiz-modform": {
+        "requires": [
+            "base",
+            "node",
+            "event"
+        ]
+    }
+}

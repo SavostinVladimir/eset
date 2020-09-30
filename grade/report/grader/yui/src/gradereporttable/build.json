@@ -1,0 +1,11 @@
+{
+    "name": "eset-gradereport_grader-gradereporttable",
+    "builds": {
+        "eset-gradereport_grader-gradereporttable": {
+            "jsfiles": [
+                "gradereporttable.js",
+                "floatingheaders.js"
+            ]
+        }
+    }
+}

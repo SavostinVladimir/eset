@@ -1,0 +1,7 @@
+{
+  "eset-core-popuphelp": {
+    "requires": [
+        "eset-core-tooltip"
+    ]
+  }
+}

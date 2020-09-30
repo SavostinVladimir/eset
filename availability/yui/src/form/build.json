@@ -1,0 +1,10 @@
+{
+  "name": "eset-core_availability-form",
+  "builds": {
+    "eset-core_availability-form": {
+      "jsfiles": [
+        "form.js"
+      ]
+    }
+  }
+}

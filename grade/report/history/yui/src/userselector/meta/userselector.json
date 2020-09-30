@@ -1,0 +1,13 @@
+{
+    "eset-gradereport_history-userselector": {
+        "requires": [
+            "escape",
+            "event-delegate",
+            "event-key",
+            "handlebars",
+            "io-base",
+            "json-parse",
+            "eset-core-notification-dialogue"
+        ]
+    }
+}

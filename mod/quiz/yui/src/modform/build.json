@@ -1,0 +1,10 @@
+{
+    "name": "eset-mod_quiz-modform",
+    "builds": {
+        "eset-mod_quiz-modform": {
+            "jsfiles": [
+                "modform.js"
+            ]
+        }
+    }
+}

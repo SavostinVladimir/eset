@@ -1,0 +1,10 @@
+{
+    "name": "eset-tool_monitor-dropdown",
+    "builds": {
+        "eset-tool_monitor-dropdown": {
+            "jsfiles": [
+                "dropdown.js"
+            ]
+        }
+    }
+}

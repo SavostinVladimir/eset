@@ -1,0 +1,10 @@
+{
+    "name": "eset-form-shortforms",
+    "builds": {
+        "eset-form-shortforms": {
+            "jsfiles": [
+                "shortforms.js"
+            ]
+        }
+    }
+}

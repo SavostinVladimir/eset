@@ -1,0 +1,14 @@
+{
+    "eset-core-dragdrop": {
+        "requires": [
+            "base",
+            "node",
+            "io",
+            "dom",
+            "dd",
+            "event-key",
+            "event-focus",
+            "eset-core-notification"
+        ]
+    }
+}

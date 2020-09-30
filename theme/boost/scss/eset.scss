@@ -1,0 +1,44 @@
+$breadcrumb-divider: "▶" !default;
+$breadcrumb-divider-rtl: "◀" !default;
+
+// Specific overrides to make Bootstrap RTL.
+@import "eset/bootstrap-rtl";
+
+// Old Eset stuff from base theme.
+// Massive, needs broken up.
+@import "eset/variables";
+@import "eset/core";
+@import "eset/icons";
+@import "eset/admin";
+@import "eset/blocks";
+@import "eset/bootswatch";
+@import "eset/calendar";
+@import "eset/contentbank";
+@import "eset/course";
+@import "eset/drawer";
+@import "eset/dashboard";
+@import "eset/filemanager";
+@import "eset/message";
+@import "eset/question";
+@import "eset/user";
+@import "eset/search";
+@import "eset/forms";
+@import "eset/login";
+@import "eset/modules";
+@import "eset/chat";
+@import "eset/reports";
+@import "eset/backup-restore";
+@import "eset/tables";
+@import "eset/buttons";
+@import "eset/grade";
+@import "eset/templates";
+@import "eset/undo";
+@import "eset/debug";
+@import "eset/sticky-footer";
+@import "eset/popover-region";
+@import "eset/tool_usertours";
+@import "eset/print";
+@import "eset/modal";
+@import "eset/layout";
+@import "eset/prefixes";
+@import "eset/atto";

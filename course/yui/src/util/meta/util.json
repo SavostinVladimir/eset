@@ -1,0 +1,26 @@
+{
+  "eset-course-util": {
+    "requires": [
+        "node"
+    ],
+    "use": [
+        "eset-course-util-base"
+    ],
+    "submodules": {
+        "eset-course-util-base": {
+        },
+        "eset-course-util-section": {
+            "requires": [
+                "node",
+                "eset-course-util-base"
+            ]
+        },
+        "eset-course-util-cm": {
+            "requires": [
+                "node",
+                "eset-course-util-base"
+            ]
+        }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+    "eset-atto_align-button": {
+        "requires": [
+            "eset-editor_atto-plugin"
+        ]
+    }
+}

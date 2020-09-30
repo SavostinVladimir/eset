@@ -1,0 +1,8 @@
+{
+    "eset-atto_media-button": {
+        "requires": [
+            "eset-editor_atto-plugin",
+            "eset-form-shortforms"
+        ]
+    }
+}

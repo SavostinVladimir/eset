@@ -1,0 +1,10 @@
+{
+    "name": "eset-gradereport_history-userselector",
+    "builds": {
+        "eset-gradereport_history-userselector": {
+            "jsfiles": [
+                "userselector.js"
+            ]
+        }
+    }
+}

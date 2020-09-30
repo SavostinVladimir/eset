@@ -1,0 +1,7 @@
+{
+    "eset-atto_h5p-button": {
+        "requires": [
+            "eset-editor_atto-plugin"
+        ]
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "name": "eset-mod_assign-history",
+    "builds": {
+        "eset-mod_assign-history": {
+            "jsfiles": [
+                "history.js"
+            ]
+        }
+    }
+}

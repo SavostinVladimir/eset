@@ -1,0 +1,8 @@
+{
+    "eset-mod_quiz-quizbase": {
+        "requires": [
+            "base",
+            "node"
+        ]
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "eset-atto_strike-button": {
+        "requires": [
+            "eset-editor_atto-plugin"
+        ]
+    }
+}

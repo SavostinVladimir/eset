@@ -1,0 +1,11 @@
+{
+    "eset-atto_html-button": {
+        "requires": [
+            "promise",
+            "eset-editor_atto-plugin",
+            "eset-atto_html-beautify",
+            "eset-atto_html-codemirror",
+            "event-valuechange"
+        ]
+    }
+}

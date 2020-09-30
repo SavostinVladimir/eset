@@ -1,0 +1,10 @@
+{
+    "name": "eset-course-formatchooser",
+    "builds": {
+        "eset-course-formatchooser": {
+            "jsfiles": [
+                "formatchooser.js"
+            ]
+        }
+    }
+}

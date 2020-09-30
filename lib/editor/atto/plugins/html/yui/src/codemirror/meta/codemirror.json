@@ -1,0 +1,7 @@
+{
+    "eset-atto_html-codemirror": {
+        "requires": [
+            "eset-atto_html-codemirror-skin"
+        ]
+    }
+}

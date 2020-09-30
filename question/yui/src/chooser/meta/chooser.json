@@ -1,0 +1,7 @@
+{
+    "eset-question-chooser": {
+        "requires": [
+            "eset-core-chooserdialogue"
+        ]
+    }
+}

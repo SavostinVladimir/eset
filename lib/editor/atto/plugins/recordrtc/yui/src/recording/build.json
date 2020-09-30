@@ -1,0 +1,14 @@
+{
+    "name": "eset-atto_recordrtc-recording",
+    "builds": {
+        "eset-atto_recordrtc-recording": {
+            "jsfiles": [
+                "commonmodule.js",
+                "compatcheckmodule.js",
+                "abstractmodule.js",
+                "audiomodule.js",
+                "videomodule.js"
+            ]
+        }
+    }
+}

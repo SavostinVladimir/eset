@@ -1,0 +1,10 @@
+{
+  "name": "eset-atto_align-button",
+  "builds": {
+    "eset-atto_align-button": {
+      "jsfiles": [
+        "button.js"
+      ]
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+    "eset-mod_quiz-toolboxes": {
+        "requires": [
+            "base",
+            "node",
+            "event",
+            "event-key",
+            "io",
+            "eset-mod_quiz-quizbase",
+            "eset-mod_quiz-util-slot",
+            "eset-core-notification-ajaxexception"
+        ]
+    }
+}

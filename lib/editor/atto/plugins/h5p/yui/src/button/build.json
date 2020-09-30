@@ -1,0 +1,10 @@
+{
+  "name": "eset-atto_h5p-button",
+  "builds": {
+    "eset-atto_h5p-button": {
+      "jsfiles": [
+        "button.js"
+      ]
+    }
+  }
+}

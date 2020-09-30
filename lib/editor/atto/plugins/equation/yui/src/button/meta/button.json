@@ -1,0 +1,12 @@
+{
+    "eset-atto_equation-button": {
+        "requires": [
+            "eset-editor_atto-plugin",
+            "eset-core-event",
+            "io",
+            "event-valuechange",
+            "tabview",
+            "array-extras"
+        ]
+    }
+}

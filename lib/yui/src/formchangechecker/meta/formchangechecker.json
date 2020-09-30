@@ -1,0 +1,9 @@
+{
+  "eset-core-formchangechecker": {
+    "requires": [
+      "base",
+      "event-focus",
+      "eset-core-event"
+    ]
+  }
+}

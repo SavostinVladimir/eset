@@ -1,0 +1,10 @@
+{
+  "name": "eset-course-categoryexpander",
+  "builds": {
+    "eset-course-categoryexpander": {
+      "jsfiles": [
+        "categoryexpander.js"
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "eset-filter_glossary-autolinker",
+  "builds": {
+    "eset-filter_glossary-autolinker": {
+      "jsfiles": [
+        "autolinker.js"
+      ]
+    }
+  }
+}

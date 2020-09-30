@@ -1,0 +1,10 @@
+{
+  "name": "eset-atto_media-button",
+  "builds": {
+    "eset-atto_media-button": {
+      "jsfiles": [
+        "button.js"
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "eset-core-popuphelp",
+  "builds": {
+    "eset-core-popuphelp": {
+      "jsfiles": [
+        "popuphelp.js"
+      ]
+    }
+  }
+}

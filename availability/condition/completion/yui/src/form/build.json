@@ -1,0 +1,10 @@
+{
+  "name": "eset-availability_completion-form",
+  "builds": {
+    "eset-availability_completion-form": {
+      "jsfiles": [
+        "form.js"
+      ]
+    }
+  }
+}

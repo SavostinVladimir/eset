@@ -1,0 +1,10 @@
+{
+    "name": "eset-tool_lp-dragdrop-reorder",
+    "builds": {
+        "eset-tool_lp-dragdrop-reorder": {
+            "jsfiles": [
+                "dragdropreorder.js"
+            ]
+        }
+    }
+}

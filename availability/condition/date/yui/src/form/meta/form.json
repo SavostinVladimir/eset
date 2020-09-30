@@ -1,0 +1,11 @@
+{
+  "eset-availability_date-form": {
+    "requires": [
+        "base",
+        "node",
+        "event",
+        "io",
+        "eset-core_availability-form"
+    ]
+  }
+}

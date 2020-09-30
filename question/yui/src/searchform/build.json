@@ -1,0 +1,10 @@
+{
+  "name": "eset-question-searchform",
+  "builds": {
+    "eset-question-searchform": {
+      "jsfiles": [
+        "searchform.js"
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "name": "eset-core-widget-focusafterclose",
+    "builds": {
+        "eset-core-widget-focusafterclose": {
+            "jsfiles": [
+                "focusafter.js"
+            ]
+        }
+    }
+}

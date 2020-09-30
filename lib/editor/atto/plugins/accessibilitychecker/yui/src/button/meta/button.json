@@ -1,0 +1,8 @@
+{
+    "eset-atto_accessibilitychecker-button": {
+        "requires": [
+            "color-base",
+            "eset-editor_atto-plugin"
+        ]
+    }
+}

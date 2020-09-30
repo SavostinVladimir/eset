@@ -1,0 +1,8 @@
+{
+  "eset-question-searchform": {
+    "requires": [
+        "base",
+        "node"
+    ]
+  }
+}

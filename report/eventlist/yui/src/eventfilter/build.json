@@ -1,0 +1,10 @@
+{
+    "name": "eset-report_eventlist-eventfilter",
+    "builds": {
+        "eset-report_eventlist-eventfilter": {
+            "jsfiles": [
+                "eventfilter.js"
+            ]
+        }
+    }
+}

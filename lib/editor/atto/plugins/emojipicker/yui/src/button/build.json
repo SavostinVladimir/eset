@@ -1,0 +1,10 @@
+{
+  "name": "eset-atto_emojipicker-button",
+  "builds": {
+    "eset-atto_emojipicker-button": {
+      "jsfiles": [
+        "button.js"
+      ]
+    }
+  }
+}

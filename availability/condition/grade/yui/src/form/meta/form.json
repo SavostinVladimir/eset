@@ -1,0 +1,10 @@
+{
+  "eset-availability_grade-form": {
+    "requires": [
+        "base",
+        "node",
+        "event",
+        "eset-core_availability-form"
+    ]
+  }
+}

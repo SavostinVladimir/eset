@@ -1,0 +1,8 @@
+{
+  "eset-core-lockscroll": {
+    "requires": [
+        "plugin",
+        "base-build"
+    ]
+  }
+}

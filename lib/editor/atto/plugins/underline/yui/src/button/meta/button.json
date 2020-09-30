@@ -1,0 +1,7 @@
+{
+    "eset-atto_underline-button": {
+        "requires": [
+            "eset-editor_atto-plugin"
+        ]
+    }
+}

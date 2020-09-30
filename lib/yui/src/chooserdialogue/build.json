@@ -1,0 +1,10 @@
+{
+  "name": "eset-core-chooserdialogue",
+  "builds": {
+    "eset-core-chooserdialogue": {
+      "jsfiles": [
+        "chooserdialogue.js"
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "name": "eset-mod_quiz-questionchooser",
+    "builds": {
+        "eset-mod_quiz-questionchooser": {
+            "jsfiles": [
+                "questionchooser.js"
+            ]
+        }
+    }
+}

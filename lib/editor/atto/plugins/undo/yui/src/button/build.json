@@ -1,0 +1,10 @@
+{
+  "name": "eset-atto_undo-button",
+  "builds": {
+    "eset-atto_undo-button": {
+      "jsfiles": [
+        "button.js"
+      ]
+    }
+  }
+}

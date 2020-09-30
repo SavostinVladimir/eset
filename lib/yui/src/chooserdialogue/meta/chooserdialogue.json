@@ -1,0 +1,9 @@
+{
+  "eset-core-chooserdialogue": {
+    "requires": [
+        "base",
+        "panel",
+        "eset-core-notification"
+    ]
+  }
+}

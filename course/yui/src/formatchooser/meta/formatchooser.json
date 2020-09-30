@@ -1,0 +1,9 @@
+{
+    "eset-course-formatchooser": {
+        "requires": [
+            "base",
+            "node",
+            "node-event-simulate"
+        ]
+    }
+}

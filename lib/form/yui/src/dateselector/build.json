@@ -1,0 +1,13 @@
+{
+    "name": "eset-form-dateselector",
+    "builds": {
+        "eset-form-dateselector": {
+            "jsfiles": [
+                "shared.js",
+                "dateselector.js",
+                "esetcalendar.js",
+                "calendar.js"
+            ]
+        }
+    }
+}

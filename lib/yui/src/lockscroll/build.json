@@ -1,0 +1,10 @@
+{
+  "name": "eset-core-lockscroll",
+  "builds": {
+    "eset-core-lockscroll": {
+      "jsfiles": [
+        "lockscroll.js"
+      ]
+    }
+  }
+}

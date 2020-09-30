@@ -1,0 +1,7 @@
+{
+    "eset-atto_recordrtc-recording": {
+        "requires": [
+            "eset-atto_recordrtc-button"
+        ]
+    }
+}

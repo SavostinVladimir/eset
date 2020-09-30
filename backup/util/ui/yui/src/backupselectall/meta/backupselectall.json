@@ -1,0 +1,10 @@
+{
+  "eset-backup-backupselectall": {
+    "requires": [
+        "node",
+        "event",
+        "node-event-simulate",
+        "anim"
+    ]
+  }
+}

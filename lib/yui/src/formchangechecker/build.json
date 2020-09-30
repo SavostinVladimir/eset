@@ -1,0 +1,10 @@
+{
+  "name": "eset-core-formchangechecker",
+  "builds": {
+    "eset-core-formchangechecker": {
+      "jsfiles": [
+        "formchangechecker.js"
+      ]
+    }
+  }
+}

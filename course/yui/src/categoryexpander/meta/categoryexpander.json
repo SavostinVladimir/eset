@@ -1,0 +1,8 @@
+{
+  "eset-course-categoryexpander": {
+    "requires": [
+        "node",
+        "event-key"
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+    "name": "eset-atto_managefiles-button",
+    "builds": {
+        "eset-atto_managefiles-button": {
+            "jsfiles": [
+                "button.js"
+            ]
+        }
+    }
+}

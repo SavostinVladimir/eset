@@ -1,0 +1,7 @@
+{
+    "eset-filter_mathjaxloader-loader": {
+        "requires": [
+            "eset-core-event"
+        ]
+    }
+}

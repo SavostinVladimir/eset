@@ -1,0 +1,10 @@
+{
+  "name": "eset-core-tooltip",
+  "builds": {
+    "eset-core-tooltip": {
+      "jsfiles": [
+        "tooltip.js"
+      ]
+    }
+  }
+}

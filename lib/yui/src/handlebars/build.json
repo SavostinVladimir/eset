@@ -1,0 +1,10 @@
+{
+    "name": "eset-core-handlebars",
+    "builds": {
+        "eset-core-handlebars": {
+            "jsfiles": [
+                "handlebars.js"
+            ]
+        }
+    }
+}

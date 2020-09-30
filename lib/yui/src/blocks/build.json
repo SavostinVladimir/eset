@@ -1,0 +1,13 @@
+{
+  "name": "eset-core-blocks",
+  "builds": {
+    "eset-core-blocks": {
+      "jsfiles": [
+        "shared.js",
+        "blocks.js",
+        "manager.js",
+        "blockregion.js"
+      ]
+    }
+  }
+}

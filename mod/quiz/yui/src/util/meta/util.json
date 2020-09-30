@@ -1,0 +1,26 @@
+{
+  "eset-mod_quiz-util": {
+    "requires": [
+        "node", "eset-core-actionmenu"
+    ],
+    "use": [
+        "eset-mod_quiz-util-base"
+    ],
+    "submodules": {
+        "eset-mod_quiz-util-base": {
+        },
+        "eset-mod_quiz-util-slot": {
+            "requires": [
+                "node",
+                "eset-mod_quiz-util-base"
+            ]
+        },
+        "eset-mod_quiz-util-page": {
+            "requires": [
+                "node",
+                "eset-mod_quiz-util-base"
+            ]
+        }
+    }
+  }
+}

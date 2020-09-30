@@ -1,0 +1,7 @@
+{
+    "eset-atto_emojipicker-button": {
+        "requires": [
+            "eset-editor_atto-plugin"
+        ]
+    }
+}

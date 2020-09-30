@@ -1,0 +1,10 @@
+{
+    "name": "eset-filter_mathjaxloader-loader",
+    "builds": {
+        "eset-filter_mathjaxloader-loader": {
+            "jsfiles": [
+                "loader.js"
+            ]
+        }
+    }
+}

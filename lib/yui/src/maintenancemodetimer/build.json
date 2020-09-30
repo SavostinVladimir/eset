@@ -1,0 +1,10 @@
+{
+  "name": "eset-core-maintenancemodetimer",
+  "builds": {
+    "eset-core-maintenancemodetimer": {
+      "jsfiles": [
+        "maintenancemodetimer.js"
+      ]
+    }
+  }
+}

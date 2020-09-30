@@ -1,0 +1,9 @@
+{
+    "eset-mod_quiz-questionchooser": {
+        "requires": [
+            "eset-core-chooserdialogue",
+            "eset-mod_quiz-util",
+            "querystring-parse"
+        ]
+    }
+}

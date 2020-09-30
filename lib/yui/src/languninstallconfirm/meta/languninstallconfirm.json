@@ -1,0 +1,10 @@
+{
+  "eset-core-languninstallconfirm": {
+    "requires": [
+        "base",
+        "node",
+        "eset-core-notification-confirm",
+        "eset-core-notification-alert"
+    ]
+  }
+}

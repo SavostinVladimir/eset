@@ -1,0 +1,10 @@
+{
+    "name": "eset-atto_html-button",
+    "builds": {
+        "eset-atto_html-button": {
+            "jsfiles": [
+                "button.js"
+            ]
+        }
+    }
+}

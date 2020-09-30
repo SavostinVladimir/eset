@@ -1,0 +1,10 @@
+{
+    "name": "eset-form-passwordunmask",
+    "builds": {
+        "eset-form-passwordunmask": {
+            "jsfiles": [
+                "passwordunmask.js"
+            ]
+        }
+    }
+}

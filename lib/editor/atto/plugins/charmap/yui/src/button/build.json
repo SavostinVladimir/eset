@@ -1,0 +1,10 @@
+{
+  "name": "eset-atto_charmap-button",
+  "builds": {
+    "eset-atto_charmap-button": {
+      "jsfiles": [
+        "button.js"
+      ]
+    }
+  }
+}

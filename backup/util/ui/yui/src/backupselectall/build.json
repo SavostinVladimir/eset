@@ -1,0 +1,10 @@
+{
+  "name": "eset-backup-backupselectall",
+  "builds": {
+    "eset-backup-backupselectall": {
+      "jsfiles": [
+        "backupselectall.js"
+      ]
+    }
+  }
+}

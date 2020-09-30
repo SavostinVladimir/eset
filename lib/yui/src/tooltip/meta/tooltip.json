@@ -1,0 +1,15 @@
+{
+  "eset-core-tooltip": {
+    "requires": [
+        "base",
+        "node",
+        "io-base",
+        "eset-core-notification-dialogue",
+        "json-parse",
+        "widget-position",
+        "widget-position-align",
+        "event-outside",
+        "cache-base"
+    ]
+  }
+}

@@ -1,0 +1,44 @@
+{
+    "eset-editor_atto-editor": {
+        "requires": [
+            "node",
+            "transition",
+            "io",
+            "overlay",
+            "escape",
+            "event",
+            "event-simulate",
+            "event-custom",
+            "node-event-html5",
+            "node-event-simulate",
+            "yui-throttle",
+            "eset-core-notification-dialogue",
+            "eset-core-notification-confirm",
+            "eset-editor_atto-rangy",
+            "handlebars",
+            "timers",
+            "querystring-stringify"
+        ]
+    },
+    "eset-editor_atto-plugin": {
+        "requires": [
+            "node",
+            "base",
+            "escape",
+            "event",
+            "event-outside",
+            "handlebars",
+            "event-custom",
+            "timers",
+            "eset-editor_atto-menu"
+        ]
+    },
+    "eset-editor_atto-menu": {
+        "requires": [
+            "eset-core-notification-dialogue",
+            "node",
+            "event",
+            "event-custom"
+        ]
+    }
+}

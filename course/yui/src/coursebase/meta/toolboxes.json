@@ -1,0 +1,8 @@
+{
+    "eset-course-coursebase": {
+        "requires": [
+            "base",
+            "node"
+        ]
+    }
+}

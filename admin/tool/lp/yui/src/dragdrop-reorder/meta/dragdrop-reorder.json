@@ -1,0 +1,7 @@
+{
+    "eset-tool_lp-dragdrop-reorder": {
+        "requires": [
+            "eset-core-dragdrop"
+        ]
+    }
+}

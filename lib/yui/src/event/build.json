@@ -1,0 +1,10 @@
+{
+    "name": "eset-core-event",
+    "builds": {
+        "eset-core-event": {
+            "jsfiles": [
+                "event.js"
+            ]
+        }
+    }
+}

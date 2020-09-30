@@ -1,0 +1,21 @@
+{
+  "name": "eset-mod_quiz-util",
+  "builds": {
+    "eset-mod_quiz-util-base": {
+      "jsfiles": [
+        "base.js"
+      ]
+    },
+    "eset-mod_quiz-util-slot": {
+      "jsfiles": [
+        "slot.js"
+      ]
+    }
+    ,
+    "eset-mod_quiz-util-page": {
+      "jsfiles": [
+        "page.js"
+      ]
+    }
+  }
+}

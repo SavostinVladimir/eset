@@ -1,0 +1,10 @@
+{
+    "name": "eset-backup-confirmcancel",
+    "builds": {
+        "eset-backup-confirmcancel": {
+            "jsfiles": [
+                "confirmcancel.js"
+            ]
+        }
+    }
+}
