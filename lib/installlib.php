@@ -27,25 +27,26 @@
 defined('ESET_INTERNAL') || die();
 
 /** INSTALL_WELCOME = 0 */
-define('INSTALL_WELCOME',       0);
+define('INSTALL_WELCOME', 0);
 /** INSTALL_ENVIRONMENT = 1 */
-define('INSTALL_ENVIRONMENT',   1);
+define('INSTALL_ENVIRONMENT', 1);
 /** INSTALL_PATHS = 2 */
-define('INSTALL_PATHS',         2);
+define('INSTALL_PATHS', 2);
 /** INSTALL_DOWNLOADLANG = 3 */
-define('INSTALL_DOWNLOADLANG',  3);
+define('INSTALL_DOWNLOADLANG', 3);
 /** INSTALL_DATABASETYPE = 4 */
-define('INSTALL_DATABASETYPE',  4);
+define('INSTALL_DATABASETYPE', 4);
 /** INSTALL_DATABASE = 5 */
-define('INSTALL_DATABASE',      5);
+define('INSTALL_DATABASE', 5);
 /** INSTALL_SAVE = 6 */
-define('INSTALL_SAVE',          6);
+define('INSTALL_SAVE', 6);
 
 /**
  * Tries to detect the right www root setting.
  * @return string detected www root
  */
-function install_guess_wwwroot() {
+function install_guess_wwwroot()
+{
     $wwwroot = '';
     if (empty($_SERVER['HTTPS']) or $_SERVER['HTTPS'] == 'off') {
         $wwwroot .= 'http://';
@@ -55,21 +56,23 @@ function install_guess_wwwroot() {
     $hostport = explode(':', $_SERVER['HTTP_HOST']);
     $wwwroot .= reset($hostport);
     if ($_SERVER['SERVER_PORT'] != 80 and $_SERVER['SERVER_PORT'] != '443') {
-        $wwwroot .= ':'.$_SERVER['SERVER_PORT'];
+        $wwwroot .= ':' . $_SERVER['SERVER_PORT'];
     }
     $wwwroot .= $_SERVER['SCRIPT_NAME'];
 
     list($wwwroot, $xtra) = explode('/install.php', $wwwroot);
 
+    str_replace("moodle", "eset", $wwwroot); //eset_novel
     return $wwwroot;
 }
 
 /**
- * Copy of @see{ini_get_bool()}
- * @param string $ini_get_arg
+ * Copy of @param string $ini_get_arg
  * @return bool
+ * @see{ini_get_bool()}
  */
-function install_ini_get_bool($ini_get_arg) {
+function install_ini_get_bool($ini_get_arg)
+{
     $temp = ini_get($ini_get_arg);
 
     if ($temp == '1' or strtolower($temp) == 'on') {
@@ -87,7 +90,8 @@ function install_ini_get_bool($ini_get_arg) {
  * @param int $dirpermissions
  * @return bool success
  */
-function install_init_dataroot($dataroot, $dirpermissions) {
+function install_init_dataroot($dataroot, $dirpermissions)
+{
     if (file_exists($dataroot) and !is_dir($dataroot)) {
         // file with the same name exists
         return false;
@@ -155,7 +159,8 @@ function install_init_dataroot($dataroot, $dirpermissions) {
  * @param string $titel
  * @return void
  */
-function install_helpbutton($url, $title='') {
+function install_helpbutton($url, $title = '')
+{
     if ($title == '') {
         $title = get_string('help');
     }
@@ -178,7 +183,8 @@ function install_helpbutton($url, $title='') {
  * @param mixed $dboptions
  * @return string
  */
-function install_db_validate($database, $dbhost, $dbuser, $dbpass, $dbname, $prefix, $dboptions) {
+function install_db_validate($database, $dbhost, $dbuser, $dbpass, $dbname, $prefix, $dboptions)
+{
     if (!preg_match('/^[a-z_]*$/', $prefix)) {
         return get_string('invaliddbprefix', 'install');
     }
@@ -196,13 +202,13 @@ function install_db_validate($database, $dbhost, $dbuser, $dbpass, $dbname, $pre
         return '';
     } catch (dml_exception $ex) {
         $stringmanager = get_string_manager();
-        $errorstring = $ex->errorcode.'oninstall';
+        $errorstring = $ex->errorcode . 'oninstall';
         $legacystring = $ex->errorcode;
         if ($stringmanager->string_exists($errorstring, $ex->module)) {
             // By using a different string id from the error code we are separating exception handling and output.
             $returnstring = $stringmanager->get_string($errorstring, $ex->module, $ex->a);
             if ($ex->debuginfo) {
-                $returnstring .= '<br />'.$ex->debuginfo;
+                $returnstring .= '<br />' . $ex->debuginfo;
             }
 
             return $returnstring;
@@ -212,7 +218,7 @@ function install_db_validate($database, $dbhost, $dbuser, $dbpass, $dbname, $pre
             // However it is not the preferred way.
             $returnstring = $stringmanager->get_string($legacystring, $ex->module, $ex->a);
             if ($ex->debuginfo) {
-                $returnstring .= '<br />'.$ex->debuginfo;
+                $returnstring .= '<br />' . $ex->debuginfo;
             }
 
             return $returnstring;
@@ -231,7 +237,8 @@ function install_db_validate($database, $dbhost, $dbuser, $dbpass, $dbname, $pre
  * @param object $cfg copy of $CFG
  * @return string
  */
-function install_generate_configphp($database, $cfg) {
+function install_generate_configphp($database, $cfg)
+{
     $configphp = '<?php  // Eset configuration file' . PHP_EOL . PHP_EOL;
 
     $configphp .= 'unset($CFG);' . PHP_EOL;
@@ -240,17 +247,17 @@ function install_generate_configphp($database, $cfg) {
 
     $dbconfig = $database->export_dbconfig();
 
-    foreach ($dbconfig as $key=>$value) {
+    foreach ($dbconfig as $key => $value) {
         $key = str_pad($key, 9);
-        $configphp .= '$CFG->'.$key.' = '.var_export($value, true) . ';' . PHP_EOL;
+        $configphp .= '$CFG->' . $key . ' = ' . var_export($value, true) . ';' . PHP_EOL;
     }
     $configphp .= PHP_EOL;
 
-    $configphp .= '$CFG->wwwroot   = '.var_export($cfg->wwwroot, true) . ';' . PHP_EOL ;
+    $configphp .= '$CFG->wwwroot   = ' . var_export($cfg->wwwroot, true) . ';' . PHP_EOL;
 
-    $configphp .= '$CFG->dataroot  = '.var_export($cfg->dataroot, true) . ';' . PHP_EOL;
+    $configphp .= '$CFG->dataroot  = ' . var_export($cfg->dataroot, true) . ';' . PHP_EOL;
 
-    $configphp .= '$CFG->admin     = '.var_export($cfg->admin, true) . ';' . PHP_EOL . PHP_EOL;
+    $configphp .= '$CFG->admin     = ' . var_export($cfg->admin, true) . ';' . PHP_EOL . PHP_EOL;
 
     if (empty($cfg->directorypermissions)) {
         $chmod = '02777';
@@ -274,10 +281,11 @@ function install_generate_configphp($database, $cfg) {
  * Prints complete help page used during installation.
  * Does not return.
  *
- * @global object
  * @param string $help
+ * @global object
  */
-function install_print_help_page($help) {
+function install_print_help_page($help)
+{
     global $CFG, $OUTPUT; //TODO: MUST NOT USE $OUTPUT HERE!!!
 
     @header('Content-Type: text/html; charset=UTF-8');
@@ -289,11 +297,11 @@ function install_print_help_page($help) {
     @header('Last-Modified: ' . gmdate('D, d M Y H:i:s') . ' GMT');
 
     echo '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">';
-    echo '<html dir="'.(right_to_left() ? 'rtl' : 'ltr').'">
+    echo '<html dir="' . (right_to_left() ? 'rtl' : 'ltr') . '">
           <head>
           <link rel="shortcut icon" href="theme/clean/pix/favicon.ico" />
-          <link rel="stylesheet" type="text/css" href="'.$CFG->wwwroot.'/install/css.php" />
-          <title>'.get_string('installation','install').'</title>
+          <link rel="stylesheet" type="text/css" href="' . $CFG->wwwroot . '/install/css.php" />
+          <title>' . get_string('installation', 'install') . '</title>
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           </head><body>';
     switch ($help) {
@@ -314,15 +322,16 @@ function install_print_help_page($help) {
 /**
  * Prints installation page header, we can no use weblib yet in installer.
  *
- * @global object
  * @param array $config
  * @param string $stagename
  * @param string $heading
  * @param string $stagetext
  * @param string $stageclass
  * @return void
+ * @global object
  */
-function install_print_header($config, $stagename, $heading, $stagetext, $stageclass = "alert-info") {
+function install_print_header($config, $stagename, $heading, $stagetext, $stageclass = "alert-info")
+{
     global $CFG;
 
     @header('Content-Type: text/html; charset=UTF-8');
@@ -334,30 +343,30 @@ function install_print_header($config, $stagename, $heading, $stagetext, $stagec
     @header('Last-Modified: ' . gmdate('D, d M Y H:i:s') . ' GMT');
 
     echo '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">';
-    echo '<html dir="'.(right_to_left() ? 'rtl' : 'ltr').'">
+    echo '<html dir="' . (right_to_left() ? 'rtl' : 'ltr') . '">
           <head>
           <link rel="shortcut icon" href="theme/clean/pix/favicon.ico" />';
 
-    echo '<link rel="stylesheet" type="text/css" href="'.$CFG->wwwroot.'/install/css.php" />
-          <title>'.get_string('installation','install').' - Eset '.$CFG->target_release.'</title>
+    echo '<link rel="stylesheet" type="text/css" href="' . $CFG->wwwroot . '/install/css.php" />
+          <title>' . get_string('installation', 'install') . ' - Eset ' . $CFG->target_release . '</title>
           <meta name="robots" content="noindex">
           <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
           <meta http-equiv="pragma" content="no-cache" />
           <meta http-equiv="expires" content="0" />';
 
     echo '</head><body class="notloggedin">
-            <div id="page" class="mt-0 container stage'.$config->stage.'">
+            <div id="page" class="mt-0 container stage' . $config->stage . '">
                 <div id="page-header">
                     <div id="header" class=" clearfix">
-                        <h1 class="headermain">'.get_string('installation','install').'</h1>
+                        <h1 class="headermain">' . get_string('installation', 'install') . '</h1>
                         <div class="headermenu">&nbsp;</div>
                     </div>
-                    <div class="bg-light p-3 mb-3"><h3 class="m-0">'.$stagename.'</h3></div>
+                    <div class="bg-light p-3 mb-3"><h3 class="m-0">' . $stagename . '</h3></div>
                 </div>
           <!-- END OF HEADER -->
           <div id="installdiv">';
 
-    echo '<h2>'.$heading.'</h2>';
+    echo '<h2>' . $heading . '</h2>';
 
     if ($stagetext !== '') {
         echo '<div class="alert ' . $stageclass . '">';
@@ -366,26 +375,27 @@ function install_print_header($config, $stagename, $heading, $stagetext, $stagec
     }
     // main
     echo '<form id="installform" method="post" action="install.php"><fieldset>';
-    foreach ($config as $name=>$value) {
-        echo '<input type="hidden" name="'.$name.'" value="'.s($value).'" />';
+    foreach ($config as $name => $value) {
+        echo '<input type="hidden" name="' . $name . '" value="' . s($value) . '" />';
     }
 }
 
 /**
  * Prints installation page header, we can no use weblib yet in isntaller.
  *
- * @global object
  * @param array $config
  * @param bool $reload print reload button instead of next
  * @return void
+ * @global object
  */
-function install_print_footer($config, $reload=false) {
+function install_print_footer($config, $reload = false)
+{
     global $CFG;
 
     if ($config->stage > INSTALL_WELCOME) {
-        $first = '<input type="submit" id="previousbutton" class="btn btn-secondary flex-grow-0 ml-auto" name="previous" value="&laquo; '.s(get_string('previous')).'" />';
+        $first = '<input type="submit" id="previousbutton" class="btn btn-secondary flex-grow-0 ml-auto" name="previous" value="&laquo; ' . s(get_string('previous')) . '" />';
     } else {
-        $first = '<input type="submit" id="previousbutton" class="btn btn-secondary flex-grow-0  ml-auto" name="next" value="'.s(get_string('reload')).'" />';
+        $first = '<input type="submit" id="previousbutton" class="btn btn-secondary flex-grow-0  ml-auto" name="next" value="' . s(get_string('reload')) . '" />';
         $first .= '<script type="text/javascript">
 //<![CDATA[
     var first = document.getElementById("previousbutton");
@@ -396,19 +406,19 @@ function install_print_footer($config, $reload=false) {
     }
 
     if ($reload) {
-        $next = '<input type="submit" id="nextbutton" class="btn btn-primary ml-1 flex-grow-0 mr-auto" name="next" value="'.s(get_string('reload')).'" />';
+        $next = '<input type="submit" id="nextbutton" class="btn btn-primary ml-1 flex-grow-0 mr-auto" name="next" value="' . s(get_string('reload')) . '" />';
     } else {
-        $next = '<input type="submit" id="nextbutton" class="btn btn-primary ml-1 flex-grow-0 mr-auto" name="next" value="'.s(get_string('next')).' &raquo;" />';
+        $next = '<input type="submit" id="nextbutton" class="btn btn-primary ml-1 flex-grow-0 mr-auto" name="next" value="' . s(get_string('next')) . ' &raquo;" />';
     }
 
-    echo '</fieldset><div id="nav_buttons" class="mb-3 btn-group w-100 flex-row-reverse">'.$next.$first.'</div>';
+    echo '</fieldset><div id="nav_buttons" class="mb-3 btn-group w-100 flex-row-reverse">' . $next . $first . '</div>';
 
-    $homelink  = '<div class="sitelink">'.
-       '<a title="Eset '. $CFG->target_release .'" href="http://docs.eset.org/en/Administrator_documentation" onclick="this.target=\'_blank\'">'.
-       '<img src="pix/esetlogo.png" alt="'.get_string('esetlogo').'" /></a></div>';
+    $homelink = '<div class="sitelink">' .
+        '<a title="Eset ' . $CFG->target_release . '" href="http://docs.eset.org/en/Administrator_documentation" onclick="this.target=\'_blank\'">' .
+        '<img src="pix/esetlogo.png" alt="' . get_string('esetlogo') . '" /></a></div>';
 
     echo '</form></div>';
-    echo '<div id="page-footer">'.$homelink.'</div>';
+    echo '<div id="page-footer">' . $homelink . '</div>';
     echo '</div></body></html>';
 }
 
@@ -420,10 +430,11 @@ function install_print_footer($config, $reload=false) {
  * @param bool $interactive
  * @return void
  */
-function install_cli_database(array $options, $interactive) {
+function install_cli_database(array $options, $interactive)
+{
     global $CFG, $DB;
-    require_once($CFG->libdir.'/environmentlib.php');
-    require_once($CFG->libdir.'/upgradelib.php');
+    require_once($CFG->libdir . '/environmentlib.php');
+    require_once($CFG->libdir . '/upgradelib.php');
 
     // show as much debug as possible
     @error_reporting(E_ALL | E_STRICT);
@@ -441,9 +452,9 @@ function install_cli_database(array $options, $interactive) {
     $branch = null;
 
     // read $version and $release
-    require($CFG->dirroot.'/version.php');
+    require($CFG->dirroot . '/version.php');
 
-    if ($DB->get_tables() ) {
+    if ($DB->get_tables()) {
         cli_error(get_string('clitablesexist', 'install'));
     }
 
